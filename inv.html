@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Inventario - CBTis 258</title>
+<a href="inv.html">
+<button>Ir al Inventario</button>
+</a>
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#eef2f7;
+margin:0;
+padding:0;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#005599;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:20px;
+}
+
+h2{
+color:#003366;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+background:white;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#003366;
+color:white;
+}
+
+tr:nth-child(even){
+background:#f5f5f5;
+}
+
+.formulario{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+max-width:500px;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:10px;
+}
+
+button{
+background:#003366;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sistema de Inventario de Laboratorios</h1>
+<p>CBTis 258</p>
+</header>
+
+<nav>
+<a href="#lab1">Laboratorio 1</a>
+<a href="#lab2">Laboratorio 2</a>
+<a href="#lab3">Laboratorio 3</a>
+<a href="#registro">Registrar Equipo</a>
+<a href="#reportes">Reportes</a>
+</nav>
+
+<section id="lab1">
+
+<h2>Laboratorio de Cómputo 1</h2>
+
+<table>
+<tr>
+<th>ID</th>
+<th>Equipo</th>
+<th>Cantidad</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>001</td>
+<td>Computadoras</td>
+<td>20</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>002</td>
+<td>Teclados</td>
+<td>20</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>003</td>
+<td>Mouse</td>
+<td>20</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>004</td>
+<td>Proyector</td>
+<td>1</td>
+<td>Funcionando</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="lab2">
+
+<h2>Laboratorio de Cómputo 2</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Equipo</th>
+<th>Cantidad</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>005</td>
+<td>Computadoras</td>
+<td>18</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>006</td>
+<td>Teclados</td>
+<td>18</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>007</td>
+<td>Mouse</td>
+<td>18</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>008</td>
+<td>Impresora</td>
+<td>1</td>
+<td>Funcionando</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="lab3">
+
+<h2>Laboratorio de Computo 3</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Equipo</th>
+<th>Cantidad</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>009</td>
+<td>Computadoras</td>
+<td>15</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>010</td>
+<td>Teclados</td>
+<td>15</td>
+<td>Buen estado</td>
+</tr>
+
+<tr>
+<td>011</td>
+<td>Mouse</td>
+<td>5</td>
+<td>Funcionando</td>
+</tr>
+
+<tr>
+<td>012</td>
+<td>Pantalla</td>
+<td>2</td>
+<td>Buen estado</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="registro">
+
+<h2>Registrar nuevo equipo</h2>
+
+<div class="formulario">
+
+<label>Nombre del equipo</label>
+<input type="text">
+
+<label>Laboratorio</label>
+<select>
+<option>Laboratorio de Computo 1</option>
+<option>Laboratorio de Computo 2</option>
+<option>Laboratorio de Computo 3</option>
+</select>
+
+<label>Cantidad</label>
+<input type="number">
+
+<label>Estado</label>
+<select>
+<option>Buen estado</option>
+<option>En mantenimiento</option>
+<option>Dañado</option>
+</select>
+
+<button>Guardar registro</button>
+
+</div>
+
+</section>
+
+<section id="reportes">
+
+<h2>Registro de Reportes de Laboratorio</h2>
+
+<div class="formulario">
+
+<label>Nombre del responsable</label>
+<input type="text">
+
+<label>Laboratorio</label>
+<select>
+<option>Laboratorio 1</option>
+<option>Laboratorio 2</option>
+<option>Laboratorio 3</option>
+</select>
+
+<label>Fecha</label>
+<input type="date">
+
+<label>Descripción del reporte</label>
+<textarea rows="4"></textarea>
+
+<button>Enviar reporte</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>CBTis 258 - Sistema de Inventario de Laboratorios</p>
+
+
+</footer>
+<button class="back" onclick="volver()">Volver al menú</button>
+
+</body>
+</html>

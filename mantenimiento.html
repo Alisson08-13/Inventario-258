@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mantenimiento de Computadoras</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#eef2f7;
+margin:0;
+}
+
+
+/* FORMULARIO */
+
+.formulario{
+background:white;
+padding:25px;
+border-radius:10px;
+max-width:500px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+label{
+font-weight:bold;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:12px;
+}
+
+button{
+background:#003366;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+/* TABLA */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+background:white;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#003366;
+color:white;
+}
+
+tr:nth-child(even){
+background:#f5f5f5;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+
+
+
+<div class="container">
+
+<h2>Registrar mantenimiento</h2>
+
+<div class="formulario">
+
+<label>Número de máquina</label>
+<input type="text" placeholder="Ejemplo: PC-01">
+
+<label>Marca</label>
+<input type="text" placeholder="Ejemplo: HP, Dell">
+
+<label>Tipo de mantenimiento</label>
+<select>
+<option>Preventivo</option>
+<option>Correctivo</option>
+<option>Actualización de software</option>
+<option>Limpieza interna</option>
+</select>
+
+<label>Descripción del mantenimiento</label>
+<textarea rows="4" placeholder="Describe el mantenimiento realizado"></textarea>
+
+<label>Técnico responsable</label>
+<input type="text">
+
+<label>Fecha</label>
+<input type="date">
+
+<label>Hora</label>
+<input type="time">
+
+<button>Registrar mantenimiento</button>
+
+</div>
+
+<h2>Historial de mantenimiento</h2>
+
+<table>
+
+<tr>
+<th>Máquina</th>
+<th>Marca</th>
+<th>Mantenimiento</th>
+<th>Técnico</th>
+<th>Fecha</th>
+</tr>
+
+<tr>
+<td>PC-01</td>
+<td>HP</td>
+<td>Limpieza interna</td>
+<td>Juan Pérez</td>
+<td>10/03/2026</td>
+</tr>
+
+<tr>
+<td>PC-05</td>
+<td>Dell</td>
+<td>Actualización de software</td>
+<td>Ana López</td>
+<td>08/03/2026</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+<p>CBTis 258 - Sistema de Inventario de Laboratorios</p>
+
+</footer>
+
+</body>
+</html>
+```
+
+

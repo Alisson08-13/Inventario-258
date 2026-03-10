@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reportes por Laboratorios </title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+background:#eef2f7;
+margin:0;
+}
+
+
+
+
+/* CONTENIDO */
+
+.container{
+padding:30px;
+}
+
+h2{
+color:#003366;
+margin-top:40px;
+}
+
+/* TABLA */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+background:white;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#003366;
+color:white;
+}
+
+tr:nth-child(even){
+background:#f5f5f5;
+}
+
+/* BOTONES */
+
+button{
+background:#003366;
+color:white;
+border:none;
+padding:10px;
+margin-top:10px;
+cursor:pointer;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Reportes por Laboratorios</h1>
+</header>
+
+
+<div class="container">
+
+<h2>Reportes del Laboratorio 1</h2>
+
+<table>
+<tr>
+<th>No. Máquina</th>
+<th>Problema</th>
+<th>Técnico</th>
+<th>Fecha</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>PC-01</td>
+<td>No enciende</td>
+<td>Juan Pérez</td>
+<td>10/03/2026</td>
+<td>En reparación</td>
+</tr>
+
+<tr>
+<td>PC-05</td>
+<td>Virus en sistema</td>
+<td>Ana López</td>
+<td>08/03/2026</td>
+<td>Solucionado</td>
+</tr>
+
+</table>
+
+<h2>Reportes del Laboratorio 2</h2>
+
+<table>
+<tr>
+<th>No. Máquina</th>
+<th>Problema</th>
+<th>Técnico</th>
+<th>Fecha</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>PC-03</td>
+<td>Monitor dañado</td>
+<td>Carlos Ruiz</td>
+<td>09/03/2026</td>
+<td>En revisión</td>
+</tr>
+
+<tr>
+<td>PC-07</td>
+<td>Teclado no funciona</td>
+<td>Maria Torres</td>
+<td>07/03/2026</td>
+<td>Reparado</td>
+</tr>
+
+</table>
+
+<h2>Reportes del Laboratorio 3</h2>
+
+<table>
+<tr>
+<th>No. Máquina</th>
+<th>Problema</th>
+<th>Técnico</th>
+<th>Fecha</th>
+<th>Estado</th>
+</tr>
+
+<tr>
+<td>PC-02</td>
+<td>Mouse dañado</td>
+<td>Luis García</td>
+<td>06/03/2026</td>
+<td>Pendiente</td>
+</tr>
+
+<tr>
+<td>PC-08</td>
+<td>Sistema lento</td>
+<td>Sofía Martínez</td>
+<td>05/03/2026</td>
+<td>Solucionado</td>
+</tr>
+
+</table>
+
+<button onclick="window.print()">Imprimir Reportes</button>
+
+</div>
+
+<footer>
+<p>CBTis 258 - Sistema de Inventario de Laboratorios</p>
+
+</footer>
+
+</body>
+</html>
+```

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel Principal - Inventario CBTis 258</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barra superior */
+header{
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container{
+    display: flex;
+}
+
+/* Menú lateral */
+.sidebar{
+    width: 220px;
+    background-color: #333;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar a{
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    background-color: #575757;
+}
+
+/* Área de contenido */
+.content{
+    flex: 1;
+    padding: 20px;
+}
+
+/* Tarjetas */
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Sistema de Inventario - CBTis 258</h2>
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+<a href="panel.html¡">Inicio</a>
+<a href="inv.html">Inventario</a>
+<a href="registro_equipos.html">Registrar Equipo</a>
+<a href="regfallas.html">Registrar Fallas</a>
+<a href="mantenimiento.html">Mantenimiento</a>
+<a href="reportes.html">Reportes por lab</a>
+
+</div>
+
+<div class="content">
+
+<h3>Panel Principal</h3>
+
+<div class="cards">
+
+<div class="card">
+<h4>Equipos</h4>
+<p>Ver inventario</p>
+</div>
+
+<div class="card">
+<h4>Registrar</h4>
+<p>Agregar equipo</p>
+</div>
+
+<div class="card">
+<h4>Fallas</h4>
+<p>Registrar daño</p>
+</div>
+
+<div class="card">
+<h4>Reportes</h4>
+<p>Ver reportes</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

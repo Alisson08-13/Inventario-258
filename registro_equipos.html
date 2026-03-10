@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Equipos</title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#eef2f7;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.registro-container{
+background:white;
+padding:30px;
+border-radius:12px;
+width:500px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+color:#1e3a8a;
+}
+
+label{
+font-weight:bold;
+display:block;
+margin-top:10px;
+}
+
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+textarea{
+resize:none;
+}
+
+button{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="registro-container">
+
+<h2>Registrar Equipo</h2>
+
+<form>
+
+<label>Tipo de equipo</label>
+<select>
+<option>Computadora</option>
+<option>Monitor</option>
+<option>Teclado</option>
+<option>Mouse</option>
+<option>Impresora</option>
+<option>Proyector</option>
+</select>
+
+<label>Número de inventario</label>
+<input type="text" placeholder="Ejemplo: PC-001">
+
+<label>Número de serie</label>
+<input type="text" placeholder="Número de serie">
+
+<label>Marca</label>
+<input type="text" placeholder="Ejemplo: HP, Dell">
+
+<label>Modelo</label>
+<input type="text" placeholder="Modelo del equipo">
+
+<label>Laboratorio</label>
+<select>
+<option>Laboratorio 1</option>
+<option>Laboratorio 2</option>
+<option>Laboratorio 3</option>
+<option>Oficina</option>
+</select>
+
+<label>Estado</label>
+<select>
+<option>Funcionando</option>
+<option>En reparación</option>
+<option>Fuera de servicio</option>
+</select>
+
+<label>Fecha de registro</label>
+<input type="date">
+
+<label>Observaciones</label>
+<textarea rows="3" placeholder="Detalles adicionales del equipo"></textarea>
+
+<button type="submit">Guardar Equipo</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
